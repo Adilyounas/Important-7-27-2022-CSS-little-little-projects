@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Cinzel&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Playfair+Display&family=Rubik+Glitch&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+a{
+    border: 2px solid #ff7070;
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Cormorant SC', serif;
+    position: relative;
+    overflow:hidden ;
+
+}
+
+.wave{
+    position: absolute;
+    background-color: #def3f6;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:calc( 100% + 41px);
+    transition: all 2s ;
+    z-index: -1;
+}
+
+.wave::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 41px;
+    top: -41px;
+    background-image: url(wave.png);
+    background-repeat: no-repeat;
+    animation: wave 0.5s linear infinite;
+
+} 
+
+a:hover .wave{
+    top: 0;
+}
+
+@keyframes wave{
+    0%{
+        background-position-x: 0;
+
+    }
+
+    25%{
+        background-position-x: 25%;
+
+    }
+
+    50%{
+        background-position-x: 50%;
+
+    }
+
+    75%{
+        background-position-x: 75%;
+
+    }
+
+    100%{
+        background-position-x: 100%;
+
+    }
+}

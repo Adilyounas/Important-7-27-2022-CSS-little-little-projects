@@ -1,0 +1,34 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgb(165, 165, 165);
+}
+
+.main_div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Pngtree—rustic\ flower\ graphic_5537591.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+h1{
+    mix-blend-mode: screen;
+    background-color: aliceblue;
+    font-size: 5rem;
+}

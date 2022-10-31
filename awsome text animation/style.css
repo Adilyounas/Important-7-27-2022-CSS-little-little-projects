@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cardo:ital@1&family=Cinzel:wght@500&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Fredoka+One&family=Georama:wght@300&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nunito:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Oswald&family=Playfair+Display&family=Poppins:ital,wght@1,200&family=Reggae+One&family=Rowdies&family=Rubik+Glitch&family=Ubuntu:wght@300&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+.center_div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    position: relative;
+    font-size: 8rem;
+}
+
+h2::before{
+    overflow: hidden;
+    content: "~Awesome~";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: #2ed573;
+    left: 0%;
+    border-right: .4rem solid #2ed573;
+    animation: slide 3s linear infinite;
+    -webkit-animation:slide 3s linear infinite ;
+}
+
+
+
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+
+    50%{
+        width: 100%;
+    }
+
+    100%{
+        width: 0%;
+    }
+
+
+}
+
+
+

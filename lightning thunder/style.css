@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cardo:ital@1&family=Cinzel:wght@500&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Georama:wght@300&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nunito:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Oswald&family=Playfair+Display&family=Poppins:ital,wght@1,200&family=Reggae+One&family=Rowdies&family=Rubik+Glitch&family=Ubuntu:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 35%);
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    font-size: 12rem;
+    margin-left: 3.5rem;
+    color: #576574;
+    animation: lightning 1s linear infinite;
+}
+
+ul li:nth-child(1){
+    
+    margin-left: 0;
+}
+
+@keyframes lightning{
+    0%{
+        color: #576574;
+        text-shadow: none;
+    }
+    75%{
+    color: #576574;
+        text-shadow: none;
+    }
+    100%{
+        color: #f1c40f;
+        text-shadow: 0 0 1rem #d35400,0 0 5rem #d35400;
+    }
+}
+
+
+
+ul li:nth-child(1){
+    
+    animation-delay: 0s;
+}
+
+ul li:nth-child(2){
+    
+    animation-delay: 0.3s;
+}
+
+ul li:nth-child(3){
+    
+    animation-delay: 0.7s;
+}
+
+ul li:nth-child(4){
+    
+    animation-delay: 1.1s;
+}
+
+ul li:nth-child(5){
+    
+    animation-delay: 1.5s;
+}
+
+ul li:nth-child(6){
+    
+    animation-delay: 1.9s;
+}
+ul li:nth-child(7){
+    
+    animation-delay: 1.3s;
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cardo:ital@1&family=Cinzel&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Oswald&family=Playfair+Display&family=Reggae+One&family=Rubik+Glitch&family=Ubuntu:wght@300&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #e0fbfc;
+}
+
+.card{
+    height: 58%;
+    width: 20%;
+    background-color: #e0fbfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 2%;
+
+    
+}
+
+.face2{
+    text-align: center;
+    width: 210px;
+    margin-top: 76px;
+}
+.face2 h2,a,p{
+    margin-top: 20px;
+    color: #3b556e;
+    font-family: 'Oswald', sans-serif;
+}
+
+.face2 h2{
+   font-size: 31px;
+
+}
+
+
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+
+.card:hover .face1{
+    position: absolute;
+    background-color: rgb(162, 164, 255);
+    font-size: 20px;
+    top: 9%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card:hover .face1>h2{
+    
+    text-shadow: 
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 3px 0 #000 
+    ;
+}
+
+
+.face1 h2{
+    text-shadow: 
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    4px 3px 0 #000 
+    ;
+}
+
+.face1{
+    position: absolute;
+    background-color: rgb(175, 176, 253);
+    top: 0%;
+    width: 100%;
+    font-size: 50px;
+    color: aliceblue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+
+
+
+

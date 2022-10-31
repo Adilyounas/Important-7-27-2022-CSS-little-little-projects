@@ -1,0 +1,40 @@
+/* for adding before content and after content  */
+
+h1::before{
+    content: "Adil ";
+}
+
+h1::after{
+    content:" Gujranwala ";
+}
+
+/* for creating line */
+
+h1{
+    position: relative;
+    text-align: center;
+}
+
+/* for top line */
+h1::before{
+    content: "";
+    width: 6rem;
+    border-top: 2px solid red;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+/* for bottom line */
+h1::after{
+    content: "";
+    width: 6rem;
+    border-bottom: 2px solid red;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+}

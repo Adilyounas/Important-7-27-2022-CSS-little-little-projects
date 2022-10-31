@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cardo:ital@1&family=Cinzel:wght@500&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Georama:wght@300&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nunito:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Oswald&family=Playfair+Display&family=Poppins:ital,wght@1,200&family=Reggae+One&family=Rowdies&family=Rubik+Glitch&family=Ubuntu:wght@300&display=swap');
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(148, 71%, 91%);
+}
+
+button{
+    padding: 3rem 8rem;
+    font-size: 3rem;
+    background-color: #20bf6b;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 7px 7px -6px black;
+}
+
+button::before{
+    content: "";
+    height: 4rem;
+    width: 100%;
+    left: -28rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all .6s;
+
+}
+
+button:hover::before{
+    left: 28rem;
+}
+
+button:hover{
+    background-color: #2f3130;
+    color: white;
+
+}

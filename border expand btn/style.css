@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Cinzel&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@600&family=Emilys+Candy&family=Fasthand&family=Joan&family=Kdam+Thmor+Pro&family=Mina&family=Montserrat:wght@300&family=Nuosu+SIL&family=Odibee+Sans&family=Orbitron:wght@900&family=Playfair+Display&family=Reggae+One&family=Rubik+Glitch&display=swap');
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.main_div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+button{
+    background-color: bisque;
+    padding: 20px 40px;
+    font-size: 40px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    font-family: 'Reggae One', cursive;
+
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    height: 40px ;
+    width: 40px;
+    top: -15px;
+    left: -15px;
+    border-top: 5px solid bisque;
+    border-left: 5px solid bisque;
+    transition: 0.8s;
+}
+
+button::after{
+    content: "";
+    position: absolute;
+    height: 40px ;
+    width: 40px;
+    bottom: -15px;
+    right: -15px;
+    border-bottom: 5px solid bisque;
+    border-right: 5px solid bisque;
+    transition: 0.8s;
+}
+
+button:hover::before{
+    height: 100%;
+    width: 100%;
+}
+
+button:hover::after{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+body{
+    animation: colorbg 13s linear infinite;
+}
+
+@keyframes colorbg{
+    0%{
+        background-color: #9c27b0;
+    }
+
+    25%{
+        background-color: #009688;
+    }
+
+
+    0%{
+        background-color: #2196f3;
+    }
+
+    0%{
+        background-color: #ff5722;
+    }
+
+    0%{
+        background-color: yellowgreen;
+    }
+}

@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.child_div{
+    border: 12px solid red;
+    box-shadow: 0px 0px 12px red, inset 0 0 10px red;
+    height: 46vh;
+    width: 22vw;
+    transform: rotate(38deg);
+position: relative;
+}

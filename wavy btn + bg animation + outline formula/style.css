@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    animation: colorbg 13s linear infinite;
+}
+
+@keyframes colorbg{
+    0%{
+        background-color: #9c27b0;
+    }
+
+    25%{
+        background-color: #009688;
+    }
+
+
+    0%{
+        background-color: #2196f3;
+    }
+
+    0%{
+        background-color: #ff5722;
+    }
+
+    0%{
+        background-color: yellowgreen;
+    }
+}
+
+.man_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+a{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid seagreen;
+    padding: 20px 45px;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 3px 3px 0 #c6cdba;
+    box-shadow: 5px 7px 11px #c6cdba
+
+}
+
+
+.wave{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #def3f6;
+    left: 0%;
+    top: calc(100% + 41px);
+    transition: all 3s;
+    z-index: -1;
+}
+
+.wave::before{
+    content: "";
+    position: absolute;
+    height: 41px;
+    width: 100%;
+    left: 0%;
+    top: -41px;
+    background-image: url(wave.png);
+    background-repeat: no-repeat;
+    animation: wave 0.5s linear infinite;
+}
+
+a:hover .wave{
+    top: 0;
+}
+
+@keyframes wave{
+    0%{
+        background-position-x: 0%;
+    }
+
+    25%{
+        background-position-x: 25%;
+    }
+
+    50%{
+        background-position-x: 50%;
+    }
+
+    75%{
+        background-position-x: 75%;
+    }
+
+
+    100%{
+        background-position-x: 100%;
+    }
+
+    
+}

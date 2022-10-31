@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+
+.search {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 10px 0;
+
+}
+
+
+.search input {
+    width: 50%;
+    padding: 14px 0px;
+    outline: none;
+    /* border-radius: 10px; */
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.search input:focus {
+    /* border: 1px solid pink; */
+    border-bottom: 1px solid rgb(253, 203, 211);
+}
+
+
+
+.search input[placeholder="Search Item"]{
+    font-size: 17px;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav ul li {
+    list-style: none;
+    display: block;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#nav ul {
+    display: flex;
+}
+
+
+#nav {
+    background-color: #eeeeed;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+}
+
+#navbarIcon {
+    font-size: 20px;
+}
+
+#list1,
+#list2,
+#list3,
+#list4,
+#list5 {
+    padding: 50px 35px;
+    position: relative;
+}
+
+a:hover {
+    color: royalblue;
+}
+
+
+
+#list1 .jewellery_ul,
+#list2 .jewellery_ul,
+#list3 .jewellery_ul,
+#list4 .jewellery_ul,
+#list5 .jewellery_ul {
+    display: none;
+}
+
+#list1 .jewellery_ul li,
+#list2 .jewellery_ul li,
+#list3 .jewellery_ul li,
+#list4 .jewellery_ul li,
+#list5 .jewellery_ul li {
+    padding: 15px 35px;
+}
+
+
+
+
+.jewellery_ul {
+    
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeded;
+    border-radius: 5px;
+}
+
+#list1:hover .jewellery_ul {
+    display: block;
+}
+
+#list2:hover .jewellery_ul {
+    display: block;
+}
+
+#list3:hover .jewellery_ul {
+    display: block;
+}
+
+#list4:hover .jewellery_ul {
+    display: block;
+}
+
+#list5:hover .jewellery_ul {
+    display: block;
+}

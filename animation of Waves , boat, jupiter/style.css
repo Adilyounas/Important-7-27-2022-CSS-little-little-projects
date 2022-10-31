@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #000000;
+    background-image: url(3d-render-tree-landscape-against-night-sky.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.wave1::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    top: 90%;
+    background-image: url(w1.png);
+    background-repeat: no-repeat;
+    animation: wavy 100s linear infinite alternate-reverse;
+}
+
+
+
+@keyframes wavy{
+    0%{background-position-x: 100%;}
+    100%{background-position-x: 122px;}
+
+    
+
+}
+
+/* wave 2 */
+
+.wave2::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 15%;
+    top: 85%;
+    background-image: url(w2.png);
+    background-repeat: no-repeat;
+    animation: wavyy 50s linear infinite;
+    z-index: -1;
+}
+
+
+
+@keyframes wavyy{
+    0%{background-position-x: 100%;}
+    25%{background-position-y: 10px;}
+    50%{background-position-y: top;}
+    75%{background-position-y: 10px;}
+    100%{background-position-x: 122px;}
+
+}
+
+/* wave 3 */
+.wave3::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 22%;
+    top: 78%;
+    background-image: url(w3.png);
+    background-repeat: no-repeat;
+    animation: wavyyy 30s linear infinite;
+    z-index: -2;
+}
+
+
+
+@keyframes wavyyy{
+    0%{background-position-x: 100%;}
+    25%{background-position-y: 12px;}
+    50%{background-position-y: top;}
+    75%{background-position-y: 12px;}
+    100%{background-position-x: 122px;}
+
+}
+
+
+/* wave 4 */
+
+
+.wave4::before{
+    content: "";
+    position: absolute;
+    height: 24%;
+    width: 100%;
+    left: 0%;
+    top: 75%;
+    background-image: url(w4.png);
+    background-repeat: no-repeat;
+    animation: wave4 20s linear infinite;
+    z-index: -3;
+}
+
+
+@keyframes wave4{
+    0%{background-position-x: 100%;}
+    25%{background-position-y: 12px;}
+    50%{background-position-y: top;}
+    75%{background-position-y: 12px;}
+    100%{background-position-x: 122px;}
+}
+
+
+/* wave5 */
+
+.wave5::before{
+    content: "";
+    position: absolute;
+    height: 27%;
+    width: 100%;
+    left: 0%;
+    top: 67%;
+    background-image: url(w5.png);
+    background-repeat: no-repeat;
+    animation: wave4 40s linear infinite;
+    z-index: -4;
+}
+
+
+@keyframes wave4{
+    0%{background-position-x: 100%;}
+    25%{background-position-y: 12px;}
+    50%{background-position-y: top;}
+    75%{background-position-y: 12px;}
+    100%{background-position-x: 122px;}
+}
+
+/* wave6 */
+
+.wave6::before{
+    content: "";
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    left: 0%;
+    top: 75%;
+    background-image: url(w6.png);
+    background-repeat: no-repeat;
+    animation: wave4 50s linear infinite;
+    z-index: -4;
+}
+
+
+@keyframes wave4{
+    0%{background-position-x: 100%;}
+    25%{background-position-y: 12px;}
+    50%{background-position-y: top;}
+    75%{background-position-y: 12px;}
+    100%{background-position-x: 122px;}
+}
+
+/* wave7 */
+
+.wave7::before{
+    content: "";
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    left: 0%;
+    top: 65%;
+    background-image: url(w7.png);
+    background-repeat: no-repeat;
+    animation: wave4 50s linear infinite;
+    z-index: -5;
+}
+
+
+@keyframes wave4{
+    0%{background-position-x: 100%;}
+    25%{background-position-y: 12px;}
+    50%{background-position-y: top;}
+    75%{background-position-y: 12px;}
+    100%{background-position-x: 122px;}
+}
+
+
+/* wave 8 */
+
+.wave8::before{
+    content: "";
+    width: 24%;
+    height: 29%;
+    position: absolute;
+    left: 26%;
+    top: 70%;
+    transform: rotate(-2deg);
+    background-image: url(boat.png);
+    background-repeat: no-repeat;
+    animation: boat 4s linear infinite;
+    z-index: -2;
+}
+
+@keyframes boat{
+    0%{background-position-y: top;}
+    25%{background-position-y: 70%;}
+    50%{background-position-y: top;}
+    
+    75%{background-position-y: 70%;}
+    100%{background-position-y: top;}
+}
+
+/* wave 9 the moon */
+
+.wave9::before{
+    content: "";
+    width: 88%;
+    height: 65%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: rotate(-2deg);
+    background-image: url(moon.png);
+    background-repeat: no-repeat;
+    animation: moon 100s linear infinite;
+    z-index: 2;
+}
+
+@keyframes moon{
+    0%{
+        background-position-x: 20px;
+        background-position-y: 20px;
+    
+    }
+    5%{
+
+        background-position-x: 50px;
+        background-position-y: 30px;
+    }
+
+    10%{
+
+        background-position-x: 100px;
+        background-position-y: 50px;
+    }
+    15%{
+
+        background-position-x: 150px;
+        background-position-y: 70px;
+    }
+    20%{
+
+        background-position-x: 200px;
+        background-position-y: 80px;
+    }
+    25%{
+
+        background-position-x: 250px;
+        background-position-y: 100px;
+    }
+
+    30%{
+
+        background-position-x: 300px;
+        background-position-y: 120px;
+    }
+
+    35%{
+
+        background-position-x: 350px;
+        background-position-y: 140px;
+    }
+
+    40%{
+
+        background-position-x: 400px;
+        background-position-y: 150px;
+    }
+
+    45%{
+
+        background-position-x: 450px;
+        background-position-y: 170px;
+    }
+
+    50%{
+
+        background-position-x: 500px;
+        background-position-y: 190px;
+    }
+
+    55%{
+
+        background-position-x: 550px;
+        background-position-y: 200px;
+    }
+
+    60%{
+
+        background-position-x: 600px;
+        background-position-y: 250px;
+    }
+
+    65%{
+
+        background-position-x: 650px;
+        background-position-y: 300px;
+    }
+
+    70%{
+
+        background-position-x: 700px;
+        background-position-y: 400px;
+    }
+
+    75%{
+
+        background-position-x: 750px;
+        background-position-y: 450px;
+    }
+
+    80%{
+
+        background-position-x: 800px;
+        background-position-y: 500px;
+    }
+
+    85%{
+
+        background-position-x: 850px;
+        background-position-y: 510px;
+    }
+
+    90%{
+
+        background-position-x: 900px;
+        background-position-y: 520px;
+    }
+
+    95%{
+
+        background-position-x: 950px;
+        background-position-y: 530px;
+    }
+
+    100%{
+
+        background-position-x: 1000px;
+        background-position-y: 550px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+a{
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    border: 2px solid;
+    overflow: hidden;
+}
+
+.wave{
+    transition: all 2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 93px;
+    left: 0;
+    background-color: #2BC1DD;
+    z-index: -1;
+}
+
+.wave::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -33px;
+    background-image: url(w4a.png);
+    background-repeat: no-repeat;
+    animation: wavy 1s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+@keyframes wavy{
+    0%{background-position-x: 0%;}
+    100%{background-position-x: 122px;}
+    
+
+}
+
+
+
+
+a:hover .wave{
+top: 0;
+} */
